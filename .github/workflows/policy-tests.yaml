@@ -1,0 +1,26 @@
+---
+name: Compile and test Cerbos policies
+on:
+  workflow_dispatch:
+
+  pull_request:
+    branches:
+      - main
+jobs:
+  compileAndTest:
+    name: Compile and test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Cerbos
+        uses: cerbos/cerbos-setup-action@main
+        with:
+          version: latest
+
+      - name: Compile and test policies
+        uses: cerbos/cerbos-compile-action@main
+        with:
+          policyDir: policies
+          testDir: tests
