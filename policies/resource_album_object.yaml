@@ -23,3 +23,7 @@ resourcePolicy:
       effect: EFFECT_ALLOW
       derivedRoles:
         - abuse_moderator
+
+  schemas:
+    resourceSchema:
+      ref: cerbos:///album_object.json

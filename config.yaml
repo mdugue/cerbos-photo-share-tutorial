@@ -6,3 +6,6 @@ storage:
   driver: "disk"
   disk:
     directory: /photo-share/policies
+
+schema:
+  enforcement: reject
