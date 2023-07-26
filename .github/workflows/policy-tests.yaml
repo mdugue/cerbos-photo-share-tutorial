@@ -20,5 +20,5 @@ jobs:
       - name: Compile and test policies
         uses: cerbos/cerbos-compile-action@v1
         with:
-          policyDir: policies
-          testDir: tests
+          policyDir: .
+          testDir: .
