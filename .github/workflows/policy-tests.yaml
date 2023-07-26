@@ -21,4 +21,4 @@ jobs:
         uses: cerbos/cerbos-compile-action@v1
         with:
           policyDir: .
-          testDir: tests
+          testDir: .
